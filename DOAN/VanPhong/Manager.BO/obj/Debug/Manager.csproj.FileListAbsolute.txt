@@ -1,0 +1,124 @@
+C:\Users\Windows7\documents\visual studio 2010\Projects\Musicviet\Manager\bin\Manager.dll
+C:\Users\Windows7\documents\visual studio 2010\Projects\Musicviet\Manager\bin\Manager.pdb
+C:\Users\Windows7\documents\visual studio 2010\Projects\Musicviet\Manager\bin\Common.dll
+C:\Users\Windows7\documents\visual studio 2010\Projects\Musicviet\Manager\bin\Common.pdb
+C:\Users\Windows7\documents\visual studio 2010\Projects\Musicviet\Manager\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Windows7\documents\visual studio 2010\Projects\Musicviet\Manager\obj\Debug\Manager.dll
+C:\Users\Windows7\documents\visual studio 2010\Projects\Musicviet\Manager\obj\Debug\Manager.pdb
+D:\work2012\musicviet\Musicviet16032013\Musicviet\Manager\bin\Manager.dll
+D:\work2012\musicviet\Musicviet16032013\Musicviet\Manager\bin\Manager.pdb
+D:\work2012\musicviet\Musicviet16032013\Musicviet\Manager\bin\Common.dll
+D:\work2012\musicviet\Musicviet16032013\Musicviet\Manager\bin\Common.pdb
+D:\work2012\musicviet\Musicviet16032013\Musicviet\Manager\obj\Debug\ResolveAssemblyReference.cache
+D:\work2012\musicviet\Musicviet16032013\Musicviet\Manager\obj\Debug\Manager.dll
+D:\work2012\musicviet\Musicviet16032013\Musicviet\Manager\obj\Debug\Manager.pdb
+C:\Users\Windows7\Desktop\MsViet\Musicviet\Manager\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Windows7\Desktop\MsViet\Musicviet\Manager\obj\Debug\Manager.pdb
+C:\Users\Windows7\Desktop\MsViet\Musicviet\Manager\bin\Manager.dll
+C:\Users\Windows7\Desktop\MsViet\Musicviet\Manager\bin\Manager.pdb
+C:\Users\Windows7\Desktop\MsViet\Musicviet\Manager\bin\Common.dll
+C:\Users\Windows7\Desktop\MsViet\Musicviet\Manager\bin\Common.pdb
+C:\Users\Windows7\Desktop\MsViet\Musicviet\Manager\obj\Debug\Manager.dll
+D:\work2012\musicviet\Musicviet\Manager\bin\Manager.dll
+D:\work2012\musicviet\Musicviet\Manager\bin\Manager.pdb
+D:\work2012\musicviet\Musicviet\Manager\bin\Common.dll
+D:\work2012\musicviet\Musicviet\Manager\bin\Common.pdb
+D:\work2012\musicviet\Musicviet\Manager\obj\Debug\ResolveAssemblyReference.cache
+D:\work2012\musicviet\Musicviet\Manager\obj\Debug\Manager.dll
+D:\work2012\musicviet\Musicviet\Manager\obj\Debug\Manager.pdb
+D:\musicviet\Musicviet\Manager\obj\Debug\ResolveAssemblyReference.cache
+D:\musicviet\Musicviet\Manager\obj\Debug\Manager.pdb
+D:\musicviet\Musicviet\Manager\bin\Manager.dll
+D:\musicviet\Musicviet\Manager\bin\Manager.pdb
+D:\musicviet\Musicviet\Manager\bin\Common.dll
+D:\musicviet\Musicviet\Manager\bin\Common.pdb
+D:\musicviet\Musicviet\Manager\obj\Debug\Manager.dll
+F:\Destop_17042013\musicviet_new\Musicviet\Manager\bin\Manager.dll
+F:\Destop_17042013\musicviet_new\Musicviet\Manager\bin\Manager.pdb
+F:\Destop_17042013\musicviet_new\Musicviet\Manager\bin\Common.dll
+F:\Destop_17042013\musicviet_new\Musicviet\Manager\bin\Common.pdb
+F:\Destop_17042013\musicviet_new\Musicviet\Manager\obj\Debug\ResolveAssemblyReference.cache
+F:\Destop_17042013\musicviet_new\Musicviet\Manager\obj\Debug\Manager.dll
+F:\Destop_17042013\musicviet_new\Musicviet\Manager\obj\Debug\Manager.pdb
+D:\work2012\musicviet\musicviet22042013\Musicviet\Manager\bin\Manager.dll
+D:\work2012\musicviet\musicviet22042013\Musicviet\Manager\bin\Manager.pdb
+D:\work2012\musicviet\musicviet22042013\Musicviet\Manager\bin\CollectionPager.dll
+D:\work2012\musicviet\musicviet22042013\Musicviet\Manager\bin\Common.dll
+D:\work2012\musicviet\musicviet22042013\Musicviet\Manager\bin\Common.pdb
+D:\work2012\musicviet\musicviet22042013\Musicviet\Manager\obj\Debug\ResolveAssemblyReference.cache
+D:\work2012\musicviet\musicviet22042013\Musicviet\Manager\obj\Debug\Manager.dll
+D:\work2012\musicviet\musicviet22042013\Musicviet\Manager\obj\Debug\Manager.pdb
+D:\HOANG DAO\work2012\musicviet\musicviet22042013\Musicviet\Manager\bin\Manager.dll
+D:\HOANG DAO\work2012\musicviet\musicviet22042013\Musicviet\Manager\bin\Manager.pdb
+D:\HOANG DAO\work2012\musicviet\musicviet22042013\Musicviet\Manager\bin\CollectionPager.dll
+D:\HOANG DAO\work2012\musicviet\musicviet22042013\Musicviet\Manager\bin\Common.dll
+D:\HOANG DAO\work2012\musicviet\musicviet22042013\Musicviet\Manager\bin\Common.pdb
+D:\HOANG DAO\work2012\musicviet\musicviet22042013\Musicviet\Manager\obj\Debug\ResolveAssemblyReference.cache
+D:\HOANG DAO\work2012\musicviet\musicviet22042013\Musicviet\Manager\obj\Debug\Manager.dll
+D:\HOANG DAO\work2012\musicviet\musicviet22042013\Musicviet\Manager\obj\Debug\Manager.pdb
+D:\musicviet\ok\musicviet22042013\Musicviet\Manager\bin\Manager.dll
+D:\musicviet\ok\musicviet22042013\Musicviet\Manager\bin\Manager.pdb
+D:\musicviet\ok\musicviet22042013\Musicviet\Manager\bin\Common.dll
+D:\musicviet\ok\musicviet22042013\Musicviet\Manager\bin\Common.pdb
+D:\musicviet\ok\musicviet22042013\Musicviet\Manager\obj\Debug\ResolveAssemblyReference.cache
+D:\musicviet\ok\musicviet22042013\Musicviet\Manager\obj\Debug\Manager.dll
+D:\musicviet\ok\musicviet22042013\Musicviet\Manager\obj\Debug\Manager.pdb
+E:\working_project\Musicviet\musicvet06082014\Musicviet\Manager\bin\Manager.dll
+E:\working_project\Musicviet\musicvet06082014\Musicviet\Manager\bin\Manager.pdb
+E:\working_project\Musicviet\musicvet06082014\Musicviet\Manager\bin\Common.dll
+E:\working_project\Musicviet\musicvet06082014\Musicviet\Manager\bin\Common.pdb
+E:\working_project\Musicviet\musicvet06082014\Musicviet\Manager\obj\Debug\ResolveAssemblyReference.cache
+E:\working_project\Musicviet\musicvet06082014\Musicviet\Manager\obj\Debug\Manager.dll
+E:\working_project\Musicviet\musicvet06082014\Musicviet\Manager\obj\Debug\Manager.pdb
+D:\musicviet\ban moi giao dien moi\Musicviet\Manager\bin\Manager.dll
+D:\musicviet\ban moi giao dien moi\Musicviet\Manager\bin\Manager.pdb
+D:\musicviet\ban moi giao dien moi\Musicviet\Manager\bin\CollectionPager.dll
+D:\musicviet\ban moi giao dien moi\Musicviet\Manager\bin\Common.dll
+D:\musicviet\ban moi giao dien moi\Musicviet\Manager\bin\Common.pdb
+D:\musicviet\ban moi giao dien moi\Musicviet\Manager\obj\Debug\ResolveAssemblyReference.cache
+D:\musicviet\ban moi giao dien moi\Musicviet\Manager\obj\Debug\Manager.dll
+D:\musicviet\ban moi giao dien moi\Musicviet\Manager\obj\Debug\Manager.pdb
+E:\working_project\Musicviet\musicviet11082014new\Musicviet\Manager\bin\Manager.dll
+E:\working_project\Musicviet\musicviet11082014new\Musicviet\Manager\bin\Manager.pdb
+E:\working_project\Musicviet\musicviet11082014new\Musicviet\Manager\bin\Common.dll
+E:\working_project\Musicviet\musicviet11082014new\Musicviet\Manager\bin\Common.pdb
+E:\working_project\Musicviet\musicviet11082014new\Musicviet\Manager\obj\Debug\ResolveAssemblyReference.cache
+E:\working_project\Musicviet\musicviet11082014new\Musicviet\Manager\obj\Debug\Manager.dll
+E:\working_project\Musicviet\musicviet11082014new\Musicviet\Manager\obj\Debug\Manager.pdb
+D:\working2014\work2014_cpay\gaosach\code_new\Musicviet\Manager\bin\Manager.dll
+D:\working2014\work2014_cpay\gaosach\code_new\Musicviet\Manager\bin\Manager.pdb
+D:\working2014\work2014_cpay\gaosach\code_new\Musicviet\Manager\bin\Common.dll
+D:\working2014\work2014_cpay\gaosach\code_new\Musicviet\Manager\bin\Common.pdb
+D:\working2014\work2014_cpay\gaosach\code_new\Musicviet\Manager\obj\Debug\Manager.csprojResolveAssemblyReference.cache
+D:\working2014\work2014_cpay\gaosach\code_new\Musicviet\Manager\obj\Debug\Manager.dll
+D:\working2014\work2014_cpay\gaosach\code_new\Musicviet\Manager\obj\Debug\Manager.pdb
+D:\working2014\work2014_cpay\trienlong\Musicviet\Manager\bin\Manager.dll
+D:\working2014\work2014_cpay\trienlong\Musicviet\Manager\bin\Manager.pdb
+D:\working2014\work2014_cpay\trienlong\Musicviet\Manager\bin\Common.dll
+D:\working2014\work2014_cpay\trienlong\Musicviet\Manager\bin\Common.pdb
+D:\working2014\work2014_cpay\trienlong\Musicviet\Manager\obj\Debug\Manager.csprojResolveAssemblyReference.cache
+D:\working2014\work2014_cpay\trienlong\Musicviet\Manager\obj\Debug\Manager.dll
+D:\working2014\work2014_cpay\trienlong\Musicviet\Manager\obj\Debug\Manager.pdb
+E:\Working 2016\trienlong\Musicviet\Manager\bin\Manager.dll.config
+E:\Working 2016\trienlong\Musicviet\Manager\bin\Manager.dll
+E:\Working 2016\trienlong\Musicviet\Manager\bin\Manager.pdb
+E:\Working 2016\trienlong\Musicviet\Manager\bin\Common.dll
+E:\Working 2016\trienlong\Musicviet\Manager\bin\Common.pdb
+E:\Working 2016\trienlong\Musicviet\Manager\obj\Debug\Manager.csprojResolveAssemblyReference.cache
+E:\Working 2016\trienlong\Musicviet\Manager\obj\Debug\Manager.dll
+E:\Working 2016\trienlong\Musicviet\Manager\obj\Debug\Manager.pdb
+D:\Working 2016\trienlong\Musicviet\Manager\bin\Manager.dll
+D:\Working 2016\trienlong\Musicviet\Manager\bin\Manager.pdb
+D:\Working 2016\trienlong\Musicviet\Manager\bin\Common.dll
+D:\Working 2016\trienlong\Musicviet\Manager\bin\Common.pdb
+D:\Working 2016\trienlong\Musicviet\Manager\obj\Debug\Manager.csprojResolveAssemblyReference.cache
+D:\Working 2016\trienlong\Musicviet\Manager\obj\Debug\Manager.dll
+D:\Working 2016\trienlong\Musicviet\Manager\obj\Debug\Manager.pdb
+F:\Working 2016\trienlong\Musicviet\Manager\bin\Manager.dll
+F:\Working 2016\trienlong\Musicviet\Manager\bin\Manager.pdb
+F:\Working 2016\trienlong\Musicviet\Manager\bin\Common.dll
+F:\Working 2016\trienlong\Musicviet\Manager\bin\Common.pdb
+F:\Working 2016\trienlong\Musicviet\Manager\obj\Debug\Manager.csprojResolveAssemblyReference.cache
+F:\Working 2016\trienlong\Musicviet\Manager\obj\Debug\Manager.dll
+F:\Working 2016\trienlong\Musicviet\Manager\obj\Debug\Manager.pdb
+D:\Working 2016\trienlong\Musicviet\Manager\bin\Manager.dll.config

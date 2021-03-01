@@ -1,0 +1,596 @@
+<html lang="en-us">
+
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+	
+
+        <link rel="apple-touch-con" href="" />
+
+        <title>Muse Admin Panel</title>
+
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+        <!-- The Columnal Grid and mobile stylesheet -->
+        <link rel="stylesheet" href="./columnal.css" type="text/css" media="screen" />
+
+        <!-- Fixes for IE -->
+        
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="ie.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="ie8.css" type="text/css" media="screen" />
+            <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"> </script>
+            <script type="text/javascript" src="scripts/flot/excanvas.min.js"> </script>
+        <![endif]-->        
+        
+	
+        <!-- Now that all the grids are loaded, we can move on to the actual styles. --> 
+        <link rel="stylesheet" href="jqueryui.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="./style.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="./global.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="./config.css" type="text/css" media="screen" />
+        
+        <!-- Use CDN on production server -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"> </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"> </script>
+        <!-- <script src="scripts/jquery-1.6.4.min.js"> </script> -->
+        <!-- <script src="scripts/jqueryui/jquery-ui-1.8.16.custom.min.js"> </script> -->
+        
+        <!-- Menu -->
+        <link rel="stylesheet" href="superfish.css" type="text/css" media="screen" />
+        <script src="./scripts/superfish/superfish.js"> </script>
+        
+        <!-- Adds HTML5 placeholder element to those lesser browsers -->
+        <script src="./scripts/jquery.placeholder.1.2.min.shrink.js"> </script>
+        
+        <!-- Adds charts -->
+        <script type="text/javascript" src="./scripts/flot/jquery.flot.min.js"> </script>
+        <script type="text/javascript" src="./scripts/flot/jquery.flot.pie.min.js"> </script>
+        <script type="text/javascript" src="./scripts/flot/jquery.flot.stack.min.js"> </script>
+        
+        
+        <!-- Form Validation Engine -->
+        <script src="./scripts/formvalidator/jquery.validationEngine.js"> </script>
+        <script src="./scripts/formvalidator/jquery.validationEngine-en.js"> </script>
+        <link rel="stylesheet" href="validationEngine.jquery.css" type="text/css" media="screen" />
+        
+        <!-- Sortable, searchable DataTable -->
+        <script src="./scripts/jquery.dataTables.min.js"> </script>
+        
+        <!-- Custom Tooltips -->
+        <script src="./scripts/twipsy.js"> </script>
+        
+        <!-- WYSIWYG Editor -->
+        <script src="./scripts/cleditor/jquery.cleditor.min.js"> </script>
+        <link rel="stylesheet" href="jquery.cleditor.css" type="text/css" media="screen" />
+        
+        <!-- Form Validation Engine -->
+        <script src="./scripts/formvalidator/jquery.validationEngine.js"> </script>
+        <script src="./scripts/formvalidator/jquery.validationEngine-en.js"> </script>
+        <link rel="stylesheet" href="validationEngine.jquery.css" type="text/css" media="screen" />
+        
+        <!-- Fullsized calendars -->
+        <link rel="stylesheet" href="fullcalendar.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="fullcalendar.print.css" type="text/css" media="print" />
+        <script src="./scripts/fullcalendar/fullcalendar.min.js"> </script>
+        <script src="./scripts/fullcalendar/gcal.js"> </script>
+        
+        <!-- Colorbox is a lightbox alternative-->
+        <script src="./scripts/colorbox/jquery.colorbox-min.js"> </script>
+        <link rel="stylesheet" href="colorbox.css" type="text/css" media="screen" />
+
+        <!-- Colorpicker -->
+        <script src="./scripts/colorpicker/colorpicker.js"> </script>
+        <script src="./scripts/muse.js"> </script>
+        <link rel="stylesheet" href="colorpicker.css" type="text/css" media="screen" />
+        
+        <!-- All the js used in the demo -->
+        <script src="./scripts/demo.js"> </script>
+
+        <meta charset="UTF-8"></head>
+    <body>
+
+        <div id="wrap">
+            <div id="main">
+                <header class="container">
+                    <div class="row clearfix">
+                        <div class="left">
+                            <a href="index.html" id="logo">Muse</a>
+                        </div>
+
+                    
+                        <div class="right">
+                            <ul id="toolbar">
+                                <li><span>Logged in as</span> <a class="user" href="#">Administrator</a> <a id="loginarrow" href="#"></a></li>
+                                <li><a id="messages" href="#">Messages</a></li>
+                                <li><a id="settings" href="#">Settings</a></li>
+                                <li><a id="search" href="#">Search</a></li>
+                            </ul>
+
+                            <div id="logindrop">
+                                <ul>
+                                    <li id="editprofile"><a href="#">Edit Profile</a></li>
+                                    <li id="logoutprofile"><a href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                            <div id="searchdrop">
+                                <input type="text" id="searchbox" placeholder="Search...">
+                            </div>
+                        
+                        </div>  
+                    </div>
+                </header>
+            
+                <nav class="container">
+                    <select class="mobile-only row clearfix" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                        <option value="index.php?t=dashboard">Dashboard</option>
+                        <option value="tables.php?t=tables">Tables</option>
+                        <option value="forms.php?t=forms">Forms</option>
+                        <option value="dialogbox.php?t=dialog+boxes">Dialog Boxes</option>
+                        <option value="statistics.php?t=statistics">Statistics</option>
+                        <option value="gallery.php?t=gallery">Gallery</option>
+                        <option value="typography.php?t=typography">Typography</option>
+                        <option value="grids.php?t=grids">Grid</option>
+                        <option value="calendar.php?t=calendar">Calendar</option>
+                        <option value="icons.php?t=icons">Icons</option>
+                    </select>
+
+                    <ul class="sf-menu mobile-hide row clearfix">
+                        <li class=" iconed">
+                            <a href="index.html"><span><img src="./images/header/icon_dashboard.png" /> Dashboard</span></a>
+                        </li>
+                        <li class=""><a href="tables.html"><span>Tables</span></a></li>
+                        <li class=""><a href="forms.html"><span>Forms</span></a>
+                            <ul>
+                                <li><a href="forms.html"><span>Form Styles</span></a></li>
+                                <li><a href="dialogbox.html"><span>Dialog Boxes</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="./statistics.html"><span>Statistics</span></a></li>
+                        <li class=""><a href="gallery.html"><span>Gallery</span></a></li>
+                        <li class=""><a href="typography.html"><span>Typography</span></a></li>
+                        <li><a href="#"><span>Superfish</span></a>
+                            <ul>
+                                <li><a href="#">Option 1</a></li>
+                                <li><a href="#">Option 2</a>
+                                    <ul>
+                                        <li><a href="#">Option 2a</a></li>
+                                        <li><a href="#">Option 2b</a></li>
+                                        <li><a href="#">Option 2c</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Option 3</a>
+                                    <ul>
+                                        <li><a href="#">Option 3a</a>
+                                            <ul>
+                                                <li><a href="#">Option 3aa</a></li>
+                                                <li><a href="#">Option 3ab</a></li>
+                                                <li><a href="#">Option 3ac</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Option 3b</a></li>
+                                        <li><a href="#">Option 3c</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Option 4</a></li>
+                                <li><a href="#">Option 5</a></li>
+                                <li><a href="#">Option 6</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="grids.html"><span>Grid</span></a></li>
+                        <li class=""><a href="calendar.html"><span>Calendar</span></a></li>
+                        <li class=""><a href="icons.html"><span>Icons</span></a></li>
+                    </ul>
+                </nav>
+
+
+                <a class="trigger demo_4" href="#">Customize!</a>
+
+                <div id="aurora_option" class="form panel">
+
+                    <div class="clearfix">
+                        <label>Select Preset</label>
+                        <div class="input">
+                            <select id="preset" onchange="changePreset()">
+                                <option value="#292929,#454545,#0774a7,header_blueprint.png,none">Default</option>
+                                <option value="#16331f,#25781a,#216f47,11.png,none">Green Earth</option>
+                                <option value="#4d1919,#702929,#662222,7.png,none">Royal Red</option>
+                                <option value="#2d354d,#3b4966,#606060,2.png,brushed_alu.png">Ice Blue</option>
+                                <option value="#29231b,#4d3d2c,#5e553d,header_blueprint.png,stucco.png">Chocolate Brown</option>
+                                <option value="#291325,#322236,#382f38,2.png,diagonal-noise.png">King's Garment</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <span id="aurora_or">or <span>make your own!</span></span>
+
+                    <div class="clearfix">
+                        <label>Header Color</label>
+                        <div class="input">
+                            <div id="in-header" class="picker"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>Navigation Color</label>
+                        <div class="input">
+                            <div id="in-nav" class="picker"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>Title Color</label>
+                        <div class="input">
+                            <div id="in-title" class="picker"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>Title Pattern</label>
+                        <div class="input">
+                            <select id="titlepattern" onchange="changeTitlePattern()">
+                                <option value="none">None</option>
+                                <option value="header_blueprint.png">Blueprint</option>
+                                <option value="1.png">Pattern 1</option>
+                                <option value="2.png">Pattern 2</option>
+                                <option value="3.png">Pattern 3</option>
+                                <option value="4.png">Pattern 4</option>
+                                <option value="5.png">Pattern 5</option>
+                                <option value="6.png">Pattern 6</option>
+                                <option value="7.png">Pattern 7</option>
+                                <option value="8.png">Pattern 8</option>
+                                <option value="9.png">Pattern 9</option>
+                                <option value="10.png">Pattern 10</option>
+                                <option value="11.png">Pattern 11</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>Background Pattern</label>
+                        <div class="input">
+                            <select id="backgroundpattern" onchange="changeBGPattern()">
+                                <option value="none">None</option>
+                                <option value="body_blueprint.png">Blueprint</option>
+                                <option value="stucco.png">Stucco</option>
+                                <option value="noise.png">Noise</option>
+                                <option value="brushed_alu.png">Brushed Aluminium</option>
+                                <option value="beige_paper.png">Beige Paper</option>
+                                <option value="concrete_wall.png">Concrete Wall</option>
+                                <option value="diagonal-noise.png">Diagonal Noise</option>
+                                <option value="noisy.png">Noisy</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div id="titlediv">
+                    <div class="clearfix container" id="pattern">
+                        <div class="row">
+                            <div class="col_12">
+                                <ul class="breadcrumbs hor-list">
+                                    <li><a href="index.html">Dashboard</a></li>
+                                    <li><a href="statistics.html">Statistics</a></li>
+                                </ul>
+                                <h1>Statistics</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container" id="actualbody">
+
+                    <div class="row clearfix"><div class="col_12">
+                                                  <div class="widget clearfix">
+                                                      <h2>Interacting with Data Points</h2>
+                                                      <div class="widget_inside">
+                                                          <p><a href="http://code.google.com/p/flot/">Flot</a> is a pure Javascript plotting library for jQuery. It produces graphical plots of arbitrary datasets on-the-fly client-side. The focus is on simple usage (all settings are optional), attractive looks and interactive features like zooming and mouse tracking.</p>
+
+                                                          <p>The plugin works with Internet Explorer 6+, Firefox 2.x+, Safari 3.0+, Opera 9.5+ and Konqueror 4.x+ with the HTML canvas tag</p>
+
+                                                          <div id="sincos" style="height: 300px; width: 100%;" class="centered"></div>
+                                                          <script type="text/javascript">
+                                                              $(function() {
+                                                                  var sin = [], cos = [];
+
+                                                                  for (var i = 0; i < 14; i += 0.5) {
+                                                                      sin.push([i, Math.sin(i) / i]);
+                                                                      cos.push([i, Math.cos(i)]);
+                                                                  }
+
+                                                                  var plot = $.plot($("#sincos"),
+                                                                      [{ data: sin, label: "sin(x)/x" }, { data: cos, label: "cos(x)" }], {
+                                                                          series: {
+                                                                              lines: { show: true },
+                                                                              points: { show: true }
+                                                                          },
+                                                                          grid: { hoverable: true, clickable: true, backgroundColor: { colors: ["#fff", "#eee"] } },
+                                                                          yaxis: { min: -1.2, max: 1.2 },
+                                                                          colors: ["#539F2E", "#3C67A5"]
+                                                                      });
+
+                                                                  function showTooltip(x, y, contents) {
+                                                                      $('<div id="tooltip">' + contents + '</div>').css({
+                                                                          position: 'absolute',
+                                                                          display: 'none',
+                                                                          top: y + 5,
+                                                                          left: x + 5,
+                                                                          border: '1px solid #fdd',
+                                                                          padding: '2px',
+                                                                          'background-color': '#dfeffc',
+                                                                          opacity: 0.80
+                                                                      }).appendTo("body").fadeIn(200);
+                                                                  }
+
+                                                                  var previousPoint = null;
+                                                                  $("#sincos").bind("plothover", function(event, pos, item) {
+                                                                      $("#x").text(pos.x.toFixed(2));
+                                                                      $("#y").text(pos.y.toFixed(2));
+
+                                                                      if (item) {
+                                                                          if (previousPoint != item.dataIndex) {
+                                                                              previousPoint = item.dataIndex;
+
+                                                                              $("#tooltip").remove();
+                                                                              var x = item.datapoint[0].toFixed(2),
+                                                                                  y = item.datapoint[1].toFixed(2);
+
+                                                                              showTooltip(item.pageX, item.pageY,
+                                                                                  item.series.label + " of " + x + " = " + y);
+                                                                          }
+                                                                      } else {
+                                                                          $("#tooltip").remove();
+                                                                          previousPoint = null;
+                                                                      }
+                                                                  });
+
+                                                                  $("#sincos").bind("plotclick", function(event, pos, item) {
+                                                                      if (item) {
+                                                                          $("#clickdata").text("You clicked point " + item.dataIndex + " in " + item.series.label + ".");
+                                                                          plot.highlight(item.series, item.datapoint);
+                                                                      }
+                                                                  });
+                                                              });
+                                                          </script>
+                                                          <p id="hoverdata">Mouse hovers at (<span id="x">0</span>, <span id="y">0</span>). <span id="clickdata"></span></p>
+                                                      </div>
+                                                  </div></div>
+                    </div>
+
+                    <div class="row clearfix"><div class="col_12">
+                                                  <div class="widget">
+                                                      <h2>Graphs with Stacking</h2>
+                                                      <div class="widget_inside">
+                                                          <div id="stacked" style="height: 280px; width: 100%" class="centered padding_top_15"></div>
+                                                          <p class="stackControls center">
+                                                              <input type="button" value="With stacking" class="btn blue" />
+                                                              <input type="button" value="Without stacking" class="btn blue" />
+                                                          </p>
+
+                                                          <p class="graphControls center">
+                                                              <input type="button" value="Bars" class="btn orange" />
+
+                                                              <input type="button" value="Lines" class="btn orange" />
+                                                              <input type="button" value="Lines with steps" class="btn orange" />
+                                                          </p>
+
+                                                          <script>
+                                                              $(function() {
+                                                                  var d1 = [];
+                                                                  for (var i = 0; i <= 10; i += 1)
+                                                                      d1.push([i, parseInt(Math.random() * 30)]);
+
+                                                                  var d2 = [];
+                                                                  for (var i = 0; i <= 10; i += 1)
+                                                                      d2.push([i, parseInt(Math.random() * 30)]);
+
+                                                                  var d3 = [];
+                                                                  for (var i = 0; i <= 10; i += 1)
+                                                                      d3.push([i, parseInt(Math.random() * 30)]);
+
+                                                                  var stack = 0, bars = true, lines = false, steps = false;
+
+                                                                  function plotWithOptions() {
+                                                                      $.plot($("#stacked"), [d1, d2, d3], {
+                                                                          series: {
+                                                                              stack: stack,
+                                                                              lines: { show: lines, fill: true, steps: steps },
+                                                                              bars: { show: bars, barWidth: 0.6 },
+                                                                              grid: { backgroundColor: { colors: ["#fff", "#eee"] } }
+                                                                          }
+                                                                      });
+                                                                  }
+
+                                                                  plotWithOptions();
+
+                                                                  $(".stackControls input").click(function(e) {
+                                                                      e.preventDefault();
+                                                                      stack = $(this).val() == "With stacking" ? true : null;
+                                                                      plotWithOptions();
+                                                                  });
+                                                                  $(".graphControls input").click(function(e) {
+                                                                      e.preventDefault();
+                                                                      bars = $(this).val().indexOf("Bars") != -1;
+                                                                      lines = $(this).val().indexOf("Lines") != -1;
+                                                                      steps = $(this).val().indexOf("steps") != -1;
+                                                                      plotWithOptions();
+                                                                  });
+                                                              });
+                                                          </script>
+                                                      </div>
+                                                  </div>
+                                              </div></div>
+    
+                    <div class="row clearfix"><div class="col_12">
+                                                  <div class="widget clearfix">
+                                                      <h2>Multiple Graph Types In One</h2>
+                                                      <div class="widget_inside">
+                                                          <div id="multiple" style="height: 300px; width: 100%;" class="centered"></div>
+                                                          <script type="text/javascript">
+                                                              $(function() {
+                                                                  var d1 = [];
+                                                                  for (var i = 0; i < 14; i += 0.5)
+                                                                      d1.push([i, Math.sin(i)]);
+
+                                                                  var d2 = [[0, 3], [4, 8], [8, 5], [9, 13]];
+
+                                                                  var d3 = [];
+                                                                  for (var i = 0; i < 14; i += 0.5)
+                                                                      d3.push([i, Math.cos(i)]);
+
+                                                                  var d4 = [];
+                                                                  for (var i = 0; i < 14; i += 0.1)
+                                                                      d4.push([i, Math.sqrt(i * 10)]);
+
+                                                                  var d5 = [];
+                                                                  for (var i = 0; i < 14; i += 0.5)
+                                                                      d5.push([i, Math.sqrt(i)]);
+
+                                                                  var d6 = [];
+                                                                  for (var i = 0; i < 14; i += 0.5 + Math.random())
+                                                                      d6.push([i, Math.sqrt(2 * i + Math.sin(i) + 5)]);
+
+                                                                  $.plot($("#multiple"), [
+                                                                      {
+                                                                          data: d1,
+                                                                          lines: { show: true, fill: true }
+                                                                      },
+                                                                      {
+                                                                          data: d2,
+                                                                          bars: { show: true }
+                                                                      },
+                                                                      {
+                                                                          data: d3,
+                                                                          points: { show: true }
+                                                                      },
+                                                                      {
+                                                                          data: d4,
+                                                                          lines: { show: true }
+                                                                      },
+                                                                      {
+                                                                          data: d5,
+                                                                          lines: { show: true },
+                                                                          points: { show: true }
+                                                                      },
+                                                                      {
+                                                                          data: d6,
+                                                                          lines: { show: true, steps: true }
+                                                                      }
+                                                                  ]);
+                                                              });
+                                                          </script>
+                                                      </div>
+                                                  </div>
+                                              </div></div>
+    
+    
+                    <div class="row clearfix">
+                        <div class="col_4">
+                            <div class="widget">
+                                <h2>Pie Chart</h2>
+                                <div class="widget_inside">
+                                    <div id="graph0" style="height: 300px; width: 100%;" class="centered"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_4">
+                            <div class="widget">
+                                <h2>Donut</h2>
+                                <div class="widget_inside">
+                                    <div id="donut" style="height: 300px; width: 100%;" class="centered"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_4 last">
+                            <div class="widget">
+                                <h2>Interactive</h2>
+                                <div class="widget_inside">
+                                    <div id="interactive" style="height: 300px; width: 100%;" class="centered"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $(function() {
+                            // data
+                            var data = [
+                                { label: "Series1", data: 10 },
+                                { label: "Series2", data: 30 },
+                                { label: "Series3", data: 90 },
+                                { label: "Series4", data: 70 },
+                                { label: "Series5", data: 80 },
+                                { label: "Series6", data: 110 }
+                            ];
+
+
+                            var series = Math.floor(Math.random() * 10) + 1;
+                            for (var i = 0; i < series; i++) {
+                                data[i] = { label: "Series" + (i + 1), data: Math.floor(Math.random() * 100) + 1 };
+                            }
+
+                            $.plot($("#graph0"), data,
+                                {
+                                    series: {
+                                        pie: {
+                                            show: true
+                                        }
+                                    }
+                                });
+
+                            // DONUT
+                            $.plot($("#donut"), data,
+                                {
+                                    series: {
+                                        pie: {
+                                            innerRadius: 0.5,
+                                            show: true
+                                        }
+                                    },
+                                    legend: {
+                                        show: false
+                                    }
+                                });
+
+                            // INTERACTIVE
+                            $.plot($("#interactive"), data,
+                                {
+                                    series: {
+                                        pie: {
+                                            show: true
+                                        }
+                                    },
+                                    grid: {
+                                        hoverable: true,
+                                        clickable: true
+                                    },
+                                    legend: {
+                                        show: false
+                                    }
+                                });
+                            $("#interactive").bind("plothover", pieHover);
+
+                        });
+
+                        function pieHover(event, pos, obj) {
+                            if (!obj)
+                                return;
+                            percent = parseFloat(obj.series.percent).toFixed(2);
+                            $("#hover").html('<span style="font-weight: bold; color: ' + obj.series.color + '">' + obj.series.label + ' (' + percent + '%)</span>');
+                        }
+                    </script>
+
+
+                </div></div></div>
+
+    </div><!--container -->
+    </div>
+    </div>
+
+        <footer>
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col_12">
+                        <span class="left">&copy; 2011 Themio.</span>
+                        <span class="right">Powered by Muse</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

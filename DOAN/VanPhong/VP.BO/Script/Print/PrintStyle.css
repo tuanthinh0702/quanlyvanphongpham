@@ -1,0 +1,11 @@
+body
+{
+	margin-top: 2pt;
+	margin-bottom: 2pt;
+	margin-left: 2pt;
+}
+
+#PRINT ,#CLOSE
+{
+	visibility:hidden;
+}

@@ -1,0 +1,5 @@
+D:\Doan\VanPhongNew\VanPhong\CommonBO\bin\Common.dll.config
+D:\Doan\VanPhongNew\VanPhong\CommonBO\bin\Common.dll
+D:\Doan\VanPhongNew\VanPhong\CommonBO\bin\Common.pdb
+D:\Doan\VanPhongNew\VanPhong\CommonBO\obj\Debug\Common.dll
+D:\Doan\VanPhongNew\VanPhong\CommonBO\obj\Debug\Common.pdb

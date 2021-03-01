@@ -1,0 +1,7 @@
+D:\Working 2016\trienlong\Musicviet\Manager\bin\Manager.dll
+D:\Working 2016\trienlong\Musicviet\Manager\bin\Manager.pdb
+D:\Working 2016\trienlong\Musicviet\Manager\bin\Common.dll
+D:\Working 2016\trienlong\Musicviet\Manager\bin\Common.pdb
+D:\Working 2016\trienlong\Musicviet\Manager\obj\Release\Manager.csprojResolveAssemblyReference.cache
+D:\Working 2016\trienlong\Musicviet\Manager\obj\Release\Manager.dll
+D:\Working 2016\trienlong\Musicviet\Manager\obj\Release\Manager.pdb

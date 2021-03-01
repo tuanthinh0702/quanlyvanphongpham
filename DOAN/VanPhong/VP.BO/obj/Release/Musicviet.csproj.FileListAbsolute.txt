@@ -1,0 +1,10 @@
+D:\Working 2016\trienlong\Musicviet\Musicviet\bin\Musicviet.dll
+D:\Working 2016\trienlong\Musicviet\Musicviet\bin\Musicviet.pdb
+D:\Working 2016\trienlong\Musicviet\Musicviet\bin\Common.dll
+D:\Working 2016\trienlong\Musicviet\Musicviet\bin\Manager.dll
+D:\Working 2016\trienlong\Musicviet\Musicviet\bin\Common.pdb
+D:\Working 2016\trienlong\Musicviet\Musicviet\bin\Manager.pdb
+D:\Working 2016\trienlong\Musicviet\Musicviet\obj\Release\Musicviet.csprojResolveAssemblyReference.cache
+D:\Working 2016\trienlong\Musicviet\Musicviet\obj\Release\Musicviet.csproj.ResolveComReference.cache
+D:\Working 2016\trienlong\Musicviet\Musicviet\obj\Release\Musicviet.dll
+D:\Working 2016\trienlong\Musicviet\Musicviet\obj\Release\Musicviet.pdb

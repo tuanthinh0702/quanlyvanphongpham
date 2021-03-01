@@ -1,0 +1,71 @@
+C:\Users\Windows7\documents\visual studio 2010\Projects\Baotam\Common\bin\Common.dll
+C:\Users\Windows7\documents\visual studio 2010\Projects\Baotam\Common\bin\Common.pdb
+C:\Users\Windows7\documents\visual studio 2010\Projects\Baotam\Common\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Windows7\documents\visual studio 2010\Projects\Baotam\Common\obj\Debug\Common.dll
+C:\Users\Windows7\documents\visual studio 2010\Projects\Baotam\Common\obj\Debug\Common.pdb
+D:\musicviet\Musicviet\Common\bin\Common.dll
+D:\musicviet\Musicviet\Common\bin\Common.pdb
+D:\musicviet\Musicviet\Common\obj\Debug\ResolveAssemblyReference.cache
+D:\musicviet\Musicviet\Common\obj\Debug\Common.dll
+D:\musicviet\Musicviet\Common\obj\Debug\Common.pdb
+F:\Destop_17042013\musicviet_new\Musicviet\Common\bin\Common.dll
+F:\Destop_17042013\musicviet_new\Musicviet\Common\bin\Common.pdb
+F:\Destop_17042013\musicviet_new\Musicviet\Common\obj\Debug\ResolveAssemblyReference.cache
+F:\Destop_17042013\musicviet_new\Musicviet\Common\obj\Debug\Common.dll
+F:\Destop_17042013\musicviet_new\Musicviet\Common\obj\Debug\Common.pdb
+D:\work2012\musicviet\musicviet22042013\Musicviet\Common\bin\Common.dll
+D:\work2012\musicviet\musicviet22042013\Musicviet\Common\bin\Common.pdb
+D:\work2012\musicviet\musicviet22042013\Musicviet\Common\obj\Debug\ResolveAssemblyReference.cache
+D:\work2012\musicviet\musicviet22042013\Musicviet\Common\obj\Debug\Common.dll
+D:\work2012\musicviet\musicviet22042013\Musicviet\Common\obj\Debug\Common.pdb
+D:\HOANG DAO\work2012\musicviet\musicviet22042013\Musicviet\Common\bin\Common.dll
+D:\HOANG DAO\work2012\musicviet\musicviet22042013\Musicviet\Common\bin\Common.pdb
+D:\HOANG DAO\work2012\musicviet\musicviet22042013\Musicviet\Common\obj\Debug\ResolveAssemblyReference.cache
+D:\HOANG DAO\work2012\musicviet\musicviet22042013\Musicviet\Common\obj\Debug\Common.dll
+D:\HOANG DAO\work2012\musicviet\musicviet22042013\Musicviet\Common\obj\Debug\Common.pdb
+D:\musicviet\ok\musicviet22042013\Musicviet\Common\bin\Common.dll
+D:\musicviet\ok\musicviet22042013\Musicviet\Common\bin\Common.pdb
+D:\musicviet\ok\musicviet22042013\Musicviet\Common\obj\Debug\ResolveAssemblyReference.cache
+D:\musicviet\ok\musicviet22042013\Musicviet\Common\obj\Debug\Common.dll
+D:\musicviet\ok\musicviet22042013\Musicviet\Common\obj\Debug\Common.pdb
+E:\working_project\Musicviet\musicvet06082014\Musicviet\Common\bin\Common.dll
+E:\working_project\Musicviet\musicvet06082014\Musicviet\Common\bin\Common.pdb
+E:\working_project\Musicviet\musicvet06082014\Musicviet\Common\obj\Debug\ResolveAssemblyReference.cache
+E:\working_project\Musicviet\musicvet06082014\Musicviet\Common\obj\Debug\Common.dll
+E:\working_project\Musicviet\musicvet06082014\Musicviet\Common\obj\Debug\Common.pdb
+D:\musicviet\ban moi giao dien moi\Musicviet\Common\bin\Common.dll
+D:\musicviet\ban moi giao dien moi\Musicviet\Common\bin\Common.pdb
+D:\musicviet\ban moi giao dien moi\Musicviet\Common\obj\Debug\ResolveAssemblyReference.cache
+D:\musicviet\ban moi giao dien moi\Musicviet\Common\obj\Debug\Common.dll
+D:\musicviet\ban moi giao dien moi\Musicviet\Common\obj\Debug\Common.pdb
+E:\working_project\Musicviet\musicviet11082014new\Musicviet\Common\bin\Common.dll
+E:\working_project\Musicviet\musicviet11082014new\Musicviet\Common\bin\Common.pdb
+E:\working_project\Musicviet\musicviet11082014new\Musicviet\Common\obj\Debug\ResolveAssemblyReference.cache
+E:\working_project\Musicviet\musicviet11082014new\Musicviet\Common\obj\Debug\Common.dll
+E:\working_project\Musicviet\musicviet11082014new\Musicviet\Common\obj\Debug\Common.pdb
+D:\working2014\work2014_cpay\gaosach\code_new\Musicviet\Common\bin\Common.dll
+D:\working2014\work2014_cpay\gaosach\code_new\Musicviet\Common\bin\Common.pdb
+D:\working2014\work2014_cpay\gaosach\code_new\Musicviet\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\working2014\work2014_cpay\gaosach\code_new\Musicviet\Common\obj\Debug\Common.dll
+D:\working2014\work2014_cpay\gaosach\code_new\Musicviet\Common\obj\Debug\Common.pdb
+D:\working2014\work2014_cpay\trienlong\Musicviet\Common\bin\Common.dll
+D:\working2014\work2014_cpay\trienlong\Musicviet\Common\bin\Common.pdb
+D:\working2014\work2014_cpay\trienlong\Musicviet\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\working2014\work2014_cpay\trienlong\Musicviet\Common\obj\Debug\Common.dll
+D:\working2014\work2014_cpay\trienlong\Musicviet\Common\obj\Debug\Common.pdb
+E:\Working 2016\trienlong\Musicviet\Common\bin\Common.dll.config
+E:\Working 2016\trienlong\Musicviet\Common\bin\Common.dll
+E:\Working 2016\trienlong\Musicviet\Common\bin\Common.pdb
+E:\Working 2016\trienlong\Musicviet\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\Working 2016\trienlong\Musicviet\Common\obj\Debug\Common.dll
+E:\Working 2016\trienlong\Musicviet\Common\obj\Debug\Common.pdb
+D:\Working 2016\trienlong\Musicviet\Common\bin\Common.dll
+D:\Working 2016\trienlong\Musicviet\Common\bin\Common.pdb
+D:\Working 2016\trienlong\Musicviet\Common\obj\Debug\Common.dll
+D:\Working 2016\trienlong\Musicviet\Common\obj\Debug\Common.pdb
+F:\Working 2016\trienlong\Musicviet\Common\bin\Common.dll
+F:\Working 2016\trienlong\Musicviet\Common\bin\Common.pdb
+F:\Working 2016\trienlong\Musicviet\Common\obj\Debug\Common.dll
+F:\Working 2016\trienlong\Musicviet\Common\obj\Debug\Common.pdb
+D:\Working 2016\trienlong\Musicviet\Common\bin\Common.dll.config
+D:\Working 2016\trienlong\Musicviet\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache

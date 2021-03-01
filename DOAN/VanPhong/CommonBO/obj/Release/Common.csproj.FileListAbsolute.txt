@@ -1,0 +1,4 @@
+D:\Working 2016\trienlong\Musicviet\Common\bin\Common.dll
+D:\Working 2016\trienlong\Musicviet\Common\bin\Common.pdb
+D:\Working 2016\trienlong\Musicviet\Common\obj\Release\Common.dll
+D:\Working 2016\trienlong\Musicviet\Common\obj\Release\Common.pdb

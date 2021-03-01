@@ -1,0 +1,146 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Web.master.cs" Inherits="Musicviet.Web" %>
+<%@ Register Src="Control/Header.ascx" TagName="Header" TagPrefix="uc1" %>
+<%@ Register Src="Control/Footer.ascx" TagName="Footer" TagPrefix="uc2" %>
+<%@ Import Namespace="Common" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%=Common.PageTitle.PageTitles%></title>
+    <%=Common.PageTitle.PageKeywords %> 
+    <%=Common.PageTitle.PageDescription %>
+    <meta http-equiv="content-type" content="text/html;Charset=UTF-8" />
+    <link rel="stylesheet" href="http://localhost:1751/css/normalize.min.css" />
+    <link rel="stylesheet" href="http://localhost:1751/css/main.css" />
+    <link rel="stylesheet" href="http://localhost:1751/css/cloud-zoom.css" />
+    <link rel="stylesheet" href="http://localhost:1751/css/lightbox.css" />
+     <script type="text/javascript" src="http://localhost:1751/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://localhost:1751/js/vendor/modernizr-2.6.2.min.js"></script>
+   <%-- gio hang--%>
+     <script type="text/javascript">
+         $(document).ready(function () {
+             $.extend({
+                 add2cart: function (source_id, target_id, smID, callback) {
+
+                     var source = $('#' + source_id);
+                     var target = $('#' + target_id);
+
+                     var shadow = $('#' + source_id + '_shadow');
+                     if (!shadow.attr('id')) {
+                         $('body').prepend('<div id="' + source.attr('id') + '_shadow" style="display: none; background-color:#ddd; border: solid 1px darkgray; position: static; top: 0px; z-index: 1990;">&nbsp;</div>');
+                         shadow = $('#' + source.attr('id') + '_shadow');
+                     }
+                     shadow.width(source.css('width')).height(source.css('height')).css('top', source.offset().top).css('left', source.offset().left).css('opacity', 0.5).show();
+                     shadow.css('position', 'absolute');
+
+                     shadow.animate({ width: target.innerWidth(), height: target.innerHeight(), top: target.offset().top, left: target.offset().left }, { duration: 800 })
+                       .animate({ opacity: 0 }, {
+                           duration: 100, complete: function () {
+                               shadow.empty().hide();
+                           }
+                       });
+                     $.get("http://localhost:1751/cart.aspx", { ProductID: smID }, function (result) {
+                         $('#numbercart').html(result);
+                     });
+
+                 }
+             });
+             //aad cart product
+             $.extend({
+                 add1cart: function (source_id, target_id, smID, callback) {
+
+                     var source = $('#' + source_id);
+                     var target = $('#' + target_id);
+
+                     var shadow = $('#' + source_id + '_shadow');
+                     if (!shadow.attr('id')) {
+                         $('body').prepend('<div id="' + source.attr('id') + '_shadow" style="display: none; background-color:#ddd; border: solid 1px darkgray; position: static; top: 0px; z-index: 1990;">&nbsp;</div>');
+                         shadow = $('#' + source.attr('id') + '_shadow');
+                     }
+                     shadow.width(source.css('width')).height(source.css('height')).css('top', source.offset().top).css('left', source.offset().left).css('opacity', 0.5).show();
+                     shadow.css('position', 'absolute');
+
+                     shadow.animate({ width: target.innerWidth(), height: target.innerHeight(), top: target.offset().top, left: target.offset().left }, { duration: 800 })
+                       .animate({ opacity: 0 }, {
+                           duration: 100, complete: function () {
+                               shadow.empty().hide();
+                           }
+                       });
+                     $.get("http://localhost:1751/cart.aspx", { ProductID: smID }, function (result) {
+                         $('#numbercart').html(result);
+                     });
+
+                 }
+             });
+             //add cart detail
+             $.extend({
+                 addtocart: function (source_id, target_id, smID, callback) {
+
+                     var source = $('#' + source_id);
+                     var target = $('#' + target_id);
+
+                     var shadow = $('#' + source_id + '_shadow');
+                     if (!shadow.attr('id')) {
+                         $('body').prepend('<div id="' + source.attr('id') + '_shadow" style="display: none; background-color:#ddd; border: solid 1px darkgray; position: static; top: 0px; z-index: 1990;">&nbsp;</div>');
+                         shadow = $('#' + source.attr('id') + '_shadow');
+                     }
+                     shadow.width(source.css('width')).height(source.css('height')).css('top', source.offset().top).css('left', source.offset().left).css('opacity', 0.5).show();
+                     shadow.css('position', 'absolute');
+
+                     shadow.animate({ width: target.innerWidth(), height: target.innerHeight(), top: target.offset().top, left: target.offset().left }, { duration: 800 })
+                       .animate({ opacity: 0 }, {
+                           duration: 100, complete: function () {
+                               shadow.empty().hide();
+                           }
+                       });
+                     $.get("http://localhost:1751/cart.aspx", { ProductID: smID }, function (result) {
+                         $('#numbercart').html(result);
+                     });
+
+                 }
+             });
+             $('#shopping').colorbox({ iframe: true, innerWidth: 650, innerHeight: 450 });
+             $("#post").hide();
+             $("#move").click(function () {
+                 $("#post").toggle();
+             });
+             $('#mycarouselpartner').jcarousel({
+                 auto: .000001,
+                 wrap: 'circular',
+                 numVisible: 4,
+                 animation: 20000,
+                 initCallback: mycarousel_initCallback
+             });
+         });
+
+    </script>
+
+
+</head>
+<body id="idbody">
+    <form id="form1" runat="server">
+      <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+      <uc1:Header ID="Header1" runat="server" />
+      <asp:ContentPlaceHolder ID="cphIndex" runat="server">
+      </asp:ContentPlaceHolder>
+      <uc2:Footer ID="Footer1" runat="server" />
+    </form>
+     <script type="text/javascript" src="http://localhost:1751/js/vendor/jquery.min.js"></script>
+    <script type="text/javascript">
+        window.jQuery || document.write('<script src="http://localhost:1751/js/vendor/jquery-1.10.1.min.js"><\/script>')
+    </script>
+   <script type="text/javascript" src="http://localhost:1751/js/vendor/jquery.carouFredSel-6.2.1-packed.js"></script>
+   <script type="text/javascript" src="http://localhost:1751/js/vendor/cloud_zoom.1.0.2.js"></script>
+   <script type="text/javascript" src="http://localhost:1751/js/vendor/lightbox-2.6.min.js"></script>
+          <script type="text/javascript" src="http://localhost:1751/js/vendor/jquery.easing.1.2.js"></script>
+   <script type="text/javascript" src="http://localhost:1751/js/app/main.js"></script>
+   <script type="text/javascript" src="http://localhost:1751/js/app/product.js"></script>
+   <div id="fb-root"></div>
+     <script>    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=173543929459887";
+        fjs.parentNode.insertBefore(js, fjs);
+    } (document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>

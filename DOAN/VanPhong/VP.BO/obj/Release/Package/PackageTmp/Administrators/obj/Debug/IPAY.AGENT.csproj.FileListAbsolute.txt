@@ -1,0 +1,24 @@
+D:\BlueWave\IPAY\4. Implementation\2. Code\IPAY\IPAYSlution\IPAY.AGENT\bin\IPAY.AGENT.dll.config
+D:\BlueWave\IPAY\4. Implementation\2. Code\IPAY\IPAYSlution\IPAY.AGENT\bin\IPAY.AGENT.dll
+D:\BlueWave\IPAY\4. Implementation\2. Code\IPAY\IPAYSlution\IPAY.AGENT\bin\IPAY.AGENT.pdb
+D:\BlueWave\IPAY\4. Implementation\2. Code\IPAY\IPAYSlution\IPAY.AGENT\bin\IPAY.Common.dll
+D:\BlueWave\IPAY\4. Implementation\2. Code\IPAY\IPAYSlution\IPAY.AGENT\bin\IPAY.Manager.dll
+D:\BlueWave\IPAY\4. Implementation\2. Code\IPAY\IPAYSlution\IPAY.AGENT\bin\IPAY.Utils.dll
+D:\BlueWave\IPAY\4. Implementation\2. Code\IPAY\IPAYSlution\IPAY.AGENT\bin\IPAY.Common.pdb
+D:\BlueWave\IPAY\4. Implementation\2. Code\IPAY\IPAYSlution\IPAY.AGENT\bin\IPAY.Manager.pdb
+D:\BlueWave\IPAY\4. Implementation\2. Code\IPAY\IPAYSlution\IPAY.AGENT\bin\IPAY.Utils.pdb
+D:\BlueWave\IPAY\4. Implementation\2. Code\IPAY\IPAYSlution\IPAY.AGENT\obj\Debug\ResolveAssemblyReference.cache
+D:\BlueWave\IPAY\4. Implementation\2. Code\IPAY\IPAYSlution\IPAY.AGENT\obj\Debug\IPAY.AGENT.dll
+D:\BlueWave\IPAY\4. Implementation\2. Code\IPAY\IPAYSlution\IPAY.AGENT\obj\Debug\IPAY.AGENT.pdb
+D:\Working\IPAYSlution\IPAY.AGENT\bin\IPAY.AGENT.dll.config
+D:\Working\IPAYSlution\IPAY.AGENT\bin\IPAY.AGENT.dll
+D:\Working\IPAYSlution\IPAY.AGENT\bin\IPAY.AGENT.pdb
+D:\Working\IPAYSlution\IPAY.AGENT\bin\IPAY.Common.dll
+D:\Working\IPAYSlution\IPAY.AGENT\bin\IPAY.Manager.dll
+D:\Working\IPAYSlution\IPAY.AGENT\bin\IPAY.Utils.dll
+D:\Working\IPAYSlution\IPAY.AGENT\bin\IPAY.Common.pdb
+D:\Working\IPAYSlution\IPAY.AGENT\bin\IPAY.Manager.pdb
+D:\Working\IPAYSlution\IPAY.AGENT\bin\IPAY.Utils.pdb
+D:\Working\IPAYSlution\IPAY.AGENT\obj\Debug\ResolveAssemblyReference.cache
+D:\Working\IPAYSlution\IPAY.AGENT\obj\Debug\IPAY.AGENT.dll
+D:\Working\IPAYSlution\IPAY.AGENT\obj\Debug\IPAY.AGENT.pdb

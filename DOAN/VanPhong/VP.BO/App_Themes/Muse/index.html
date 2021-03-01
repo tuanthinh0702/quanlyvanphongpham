@@ -1,0 +1,1104 @@
+<html lang="en-us">
+
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+	
+
+        <link rel="apple-touch-con" href="" />
+
+        <title>Muse Admin Panel</title>
+
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+
+        <!-- The Columnal Grid and mobile stylesheet -->
+        <link rel="stylesheet" href="columnal.css" type="text/css" media="screen" />
+
+        <!-- Fixes for IE -->
+        
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" href="ie.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="ie8.css" type="text/css" media="screen" />
+            <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"> </script>
+            <script type="text/javascript" src="scripts/flot/excanvas.min.js"> </script>
+        <![endif]-->        
+        
+	
+        <!-- Now that all the grids are loaded, we can move on to the actual styles. --> 
+        <link rel="stylesheet" href="jqueryui.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="./style.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="./global.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="./config.css" type="text/css" media="screen" />
+        
+        <!-- Use CDN on production server -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"> </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"> </script>
+        <!-- <script src="scripts/jquery-1.6.4.min.js"> </script> -->
+        <!-- <script src="scripts/jqueryui/jquery-ui-1.8.16.custom.min.js"> </script> -->
+        
+        <!-- Menu -->
+        <link rel="stylesheet" href="superfish.css" type="text/css" media="screen" />
+        <script src="./scripts/superfish/superfish.js"> </script>
+        
+        <!-- Adds HTML5 placeholder element to those lesser browsers -->
+        <script src="./scripts/jquery.placeholder.1.2.min.shrink.js"> </script>
+        
+        <!-- Adds charts -->
+        <script type="text/javascript" src="./scripts/flot/jquery.flot.min.js"> </script>
+        <script type="text/javascript" src="./scripts/flot/jquery.flot.pie.min.js"> </script>
+        <script type="text/javascript" src="./scripts/flot/jquery.flot.stack.min.js"> </script>
+        
+        
+        <!-- Form Validation Engine -->
+        <script src="./scripts/formvalidator/jquery.validationEngine.js"> </script>
+        <script src="./scripts/formvalidator/jquery.validationEngine-en.js"> </script>
+        <link rel="stylesheet" href="validationEngine.jquery.css" type="text/css" media="screen" />
+        
+        <!-- Sortable, searchable DataTable -->
+        <script src="./scripts/jquery.dataTables.min.js"> </script>
+        
+        <!-- Custom Tooltips -->
+        <script src="./scripts/twipsy.js"> </script>
+        
+        <!-- WYSIWYG Editor -->
+        <script src="./scripts/cleditor/jquery.cleditor.min.js"> </script>
+        <link rel="stylesheet" href="jquery.cleditor.css" type="text/css" media="screen" />
+        
+        <!-- Form Validation Engine -->
+        <script src="./scripts/formvalidator/jquery.validationEngine.js"> </script>
+        <script src="./scripts/formvalidator/jquery.validationEngine-en.js"> </script>
+        <link rel="stylesheet" href="validationEngine.jquery.css" type="text/css" media="screen" />
+        
+        <!-- Fullsized calendars -->
+        <link rel="stylesheet" href="fullcalendar.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="fullcalendar.print.css" type="text/css" media="print" />
+        <script src="./scripts/fullcalendar/fullcalendar.min.js"> </script>
+        <script src="./scripts/fullcalendar/gcal.js"> </script>
+        
+        <!-- Colorbox is a lightbox alternative-->
+        <script src="./scripts/colorbox/jquery.colorbox-min.js"> </script>
+        <link rel="stylesheet" href="colorbox.css" type="text/css" media="screen" />
+
+        <!-- Colorpicker -->
+        <script src="./scripts/colorpicker/colorpicker.js"> </script>
+        <script src="./scripts/muse.js"> </script>
+        <link rel="stylesheet" href="colorpicker.css" type="text/css" media="screen" />
+        
+        <!-- All the js used in the demo -->
+        <script src="./scripts/demo.js"> </script>
+
+        <meta charset="UTF-8"></head>
+    <body class="full_width">
+        <div id="sidebar" class="mobile-hide">
+            <div id="faux_header">
+                <a href="index.php-sidebar.htm" tppabs="http://muse.themio.net/index.php?sidebar" id="A1">Muse</a>
+            </div>
+            <nav>
+                <ul class="sf-menu mobile-hide row clearfix">
+                    <li class="active iconed">
+                        <a href="index.php-sidebar.htm" ><span><img src="assets/images/header/icon_dashboard.png" tppabs="http://muse.themio.net/assets/images/header/icon_dashboard.png" /> Dashboard</span></a>
+                    </li>
+                    <li><a href="tables.php-sidebar.htm"><span><img src="assets/images/header/ico_table.png" tppabs="http://muse.themio.net/assets/images/header/ico_table.png" /> Tables</span></a></li>
+                    <li><a href="forms.php-sidebar.htm" tppabs="http://muse.themio.net/forms.php?sidebar"><span><img src="assets/images/header/ico_form.png" tppabs="http://muse.themio.net/assets/images/header/ico_form.png" /> Forms</span></a>
+                        <ul>
+                            <li><a href="forms.php-t=forms.htm" tppabs="http://muse.themio.net/forms.php?t=forms"><span>Form Styles</span></a></li>
+                            <li><a href="dialogbox.php-t=forms.htm" tppabs="http://muse.themio.net/dialogbox.php?t=forms"><span>Dialog Boxes</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="statistics.php-sidebar.htm" tppabs="http://muse.themio.net/statistics.php?sidebar"><span><img src="assets/images/header/ico_chart.png" tppabs="http://muse.themio.net/assets/images/header/ico_chart.png" /> Statistics</span></a></li>
+                    <li><a href="gallery.php-sidebar.htm" tppabs="http://muse.themio.net/gallery.php?sidebar"><span><img src="assets/images/header/ico_gallery.png" tppabs="http://muse.themio.net/assets/images/header/ico_gallery.png" /> Gallery</span></a></li>
+                    <li><a href="typography.php-sidebar.htm" tppabs="http://muse.themio.net/typography.php?sidebar"><span><img src="assets/images/header/ico_typo.png" tppabs="http://muse.themio.net/assets/images/header/ico_typo.png" /> Typography</span></a></li>
+                    <li><a href="#"><span><img src="assets/images/header/ico_layout.png" tppabs="http://muse.themio.net/assets/images/header/ico_layout.png" /> Layout</span></a>
+                        <ul>
+                            <li><a href="index.php.htm" tppabs="http://muse.themio.net/index.php">Liquid</a></li>
+                            <li><a href="index.php-sidebar.htm" tppabs="http://muse.themio.net/index.php?sidebar">Sidebar</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="grids.php-sidebar.htm" tppabs="http://muse.themio.net/grids.php?sidebar"><span><img src="assets/images/header/ico_grid.png" tppabs="http://muse.themio.net/assets/images/header/ico_grid.png" /> Grid</span></a></li>
+                    <li><a href="calendar.php-sidebar.htm" tppabs="http://muse.themio.net/calendar.php?sidebar"><span><img src="assets/images/header/ico_calendar.png" tppabs="http://muse.themio.net/assets/images/header/ico_calendar.png" /> Calendar</span></a></li>
+                    <li><a href="icons.php-sidebar.htm" tppabs="http://muse.themio.net/icons.php?sidebar"><span><img src="assets/images/header/ico_icons.png" tppabs="http://muse.themio.net/assets/images/header/ico_icons.png" /> Icons</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="wrap" class="sidebarred">
+            <div id="main">
+                <header class="container">
+                    <div class="row clearfix">
+                        <div class="left">
+                            <a href="index.html" id="logo">Muse</a>
+                        </div>
+
+                    
+                        <div class="right">
+                            <ul id="toolbar">
+                                <li><span>Logged in as</span> <a class="user" href="#">Administrator</a> <a id="loginarrow" href="#"></a></li>
+                                <li><a id="messages" href="#">Messages</a></li>
+                                <li><a id="settings" href="#">Settings</a></li>
+                                <li><a id="search" href="#">Search</a></li>
+                            </ul>
+
+                            <div id="logindrop">
+                                <ul>
+                                    <li id="editprofile"><a href="#">Edit Profile</a></li>
+                                    <li id="logoutprofile"><a href="#">Logout</a></li>
+                                </ul>
+                            </div>
+                            <div id="searchdrop">
+                                <input type="text" id="searchbox" placeholder="Search...">
+                            </div>
+                        
+                        </div>  
+                    </div>
+                </header>
+            
+                <!--<nav class="container">
+                        <select class="mobile-only row clearfix" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                            <option value="index.php?t=dashboard">Dashboard</option>
+                            <option value="tables.php?t=tables">Tables</option>
+                            <option value="forms.php?t=forms">Forms</option>
+                            <option value="dialogbox.php?t=dialog+boxes">Dialog Boxes</option>
+                            <option value="statistics.php?t=statistics">Statistics</option>
+                            <option value="gallery.php?t=gallery">Gallery</option>
+                            <option value="typography.php?t=typography">Typography</option>
+                            <option value="grids.php?t=grids">Grid</option>
+                            <option value="calendar.php?t=calendar">Calendar</option>
+                            <option value="icons.php?t=icons">Icons</option>
+                        </select>
+
+                        <ul class="sf-menu mobile-hide row clearfix">
+                            <li class="active iconed">
+                                <a href="./index.html"><span><img src="./images/header/icon_dashboard.png" /> Dashboard</span></a>
+                            </li>
+                            <li class=""><a href="tables.html"><span>Tables</span></a></li>
+                            <li class=""><a href="forms.html"><span>Forms</span></a>
+                                <ul>
+                                    <li><a href="forms.html"><span>Form Styles</span></a></li>
+                                    <li><a href="dialogbox.html"><span>Dialog Boxes</span></a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="statistics.html"><span>Statistics</span></a></li>
+                            <li class=""><a href="gallery.html"><span>Gallery</span></a></li>
+                            <li class=""><a href="typography.html"><span>Typography</span></a></li>
+                            <li><a href="#"><span>Superfish</span></a>
+                                <ul>
+                                    <li><a href="#">Option 1</a></li>
+                                    <li><a href="#">Option 2</a>
+                                        <ul>
+                                            <li><a href="#">Option 2a</a></li>
+                                            <li><a href="#">Option 2b</a></li>
+                                            <li><a href="#">Option 2c</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Option 3</a>
+                                        <ul>
+                                            <li><a href="#">Option 3a</a>
+                                                <ul>
+                                                    <li><a href="#">Option 3aa</a></li>
+                                                    <li><a href="#">Option 3ab</a></li>
+                                                    <li><a href="#">Option 3ac</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Option 3b</a></li>
+                                            <li><a href="#">Option 3c</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Option 4</a></li>
+                                    <li><a href="#">Option 5</a></li>
+                                    <li><a href="#">Option 6</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="grids.html"><span>Grid</span></a></li>
+                            <li class=""><a href="calendar.html"><span>Calendar</span></a></li>
+                            <li class=""><a href="icons.html"><span>Icons</span></a></li>
+                        </ul>
+                    </nav>-->
+
+
+                <a class="trigger demo_4" href="#">Customize!</a>
+
+                <div id="aurora_option" class="form panel">
+
+                    <div class="clearfix">
+                        <label>Select Preset</label>
+                        <div class="input">
+                            <select id="preset" onchange="changePreset()">
+                                <option value="#292929,#454545,#0774a7,header_blueprint.png,none">Default</option>
+                                <option value="#16331f,#25781a,#216f47,11.png,none">Green Earth</option>
+                                <option value="#4d1919,#702929,#662222,7.png,none">Royal Red</option>
+                                <option value="#2d354d,#3b4966,#606060,2.png,brushed_alu.png">Ice Blue</option>
+                                <option value="#29231b,#4d3d2c,#5e553d,header_blueprint.png,stucco.png">Chocolate Brown</option>
+                                <option value="#291325,#322236,#382f38,2.png,diagonal-noise.png">King's Garment</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <span id="aurora_or">or <span>make your own!</span></span>
+
+                    <div class="clearfix">
+                        <label>Header Color</label>
+                        <div class="input">
+                            <div id="in-header" class="picker"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>Navigation Color</label>
+                        <div class="input">
+                            <div id="in-nav" class="picker"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>Title Color</label>
+                        <div class="input">
+                            <div id="in-title" class="picker"></div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>Title Pattern</label>
+                        <div class="input">
+                            <select id="titlepattern" onchange="changeTitlePattern()">
+                                <option value="none">None</option>
+                                <option value="header_blueprint.png">Blueprint</option>
+                                <option value="1.png">Pattern 1</option>
+                                <option value="2.png">Pattern 2</option>
+                                <option value="3.png">Pattern 3</option>
+                                <option value="4.png">Pattern 4</option>
+                                <option value="5.png">Pattern 5</option>
+                                <option value="6.png">Pattern 6</option>
+                                <option value="7.png">Pattern 7</option>
+                                <option value="8.png">Pattern 8</option>
+                                <option value="9.png">Pattern 9</option>
+                                <option value="10.png">Pattern 10</option>
+                                <option value="11.png">Pattern 11</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <label>Background Pattern</label>
+                        <div class="input">
+                            <select id="backgroundpattern" onchange="changeBGPattern()">
+                                <option value="none">None</option>
+                                <option value="body_blueprint.png">Blueprint</option>
+                                <option value="stucco.png">Stucco</option>
+                                <option value="noise.png">Noise</option>
+                                <option value="brushed_alu.png">Brushed Aluminium</option>
+                                <option value="beige_paper.png">Beige Paper</option>
+                                <option value="concrete_wall.png">Concrete Wall</option>
+                                <option value="diagonal-noise.png">Diagonal Noise</option>
+                                <option value="noisy.png">Noisy</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div id="titlediv">
+                    <div class="clearfix container" id="pattern">
+                        <div class="row">
+                            <div class="col_12">
+                                <ul class="breadcrumbs hor-list">
+                                    <li><a href="index.html">Dashboard</a></li>
+                                </ul>
+                                <h1>Dashboard</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container" id="actualbody">
+
+                    <div class="row clearfix"><div class="col_12">
+                                                  <div class="widget clearfix">
+                                                      <h2>Report</h2>
+                                                      <div class="widget_inside">
+            
+                                                          <h3>Current Statistics</h3>
+            
+                                                          <div class="report">
+                                                              <div class="button up">
+                                                                  <span class="value">1,337</span>
+                                                                  <span class="attr">Views</span>
+                                                              </div>
+                                                              <div class="button down">
+                                                                  <span class="value">9,001</span>
+                                                                  <span class="attr">Pageviews</span>
+                                                              </div>
+                                                              <div class="button">
+                                                                  <span class="value">3.142</span>
+                                                                  <span class="attr">Pages/Views</span>
+                                                              </div>
+                                                              <div class="button">
+                                                                  <span class="value">83%</span>
+                                                                  <span class="attr">Bounce Rate</span>
+                                                              </div>
+                                                              <div class="button">
+                                                                  <span class="value">00:00:33</span>
+                                                                  <span class="attr">Avg. Time on Site</span>
+                                                              </div>
+                                                              <div class="button">
+                                                                  <span class="value">42%</span>
+                                                                  <span class="attr">New Visits</span>
+                                                              </div>
+                                                          </div>
+            
+                                                          <div class="col_12">
+
+                                                              <p>Flexible and interactive graphs, made with HTML5 and canvas. Check out more charts and graphs in our <a href="statistics.html">Statistics</a> page</p>
+                
+                                                              <div id="chart" style="height: 280px; width: 100%;"></div>
+                                                              <script type="text/javascript">
+                                                                  $(function() {
+                                                                      var data1 = [
+                                                                          {
+                                                                              label: "Pageviews",
+                                                                              data: [[1, 1513], [2, 1234], [3, 1643], [4, 1245], [5, 1263], [6, 1833], [7, 1944], [8, 1739], [9, 1545], [10, 2354], [11, 1254], [12, 1531], [13, 1413], [14, 1134], [15, 1133], [16, 1445], [17, 1663], [18, 1233], [19, 1244], [20, 1439], [21, 1635], [22, 1224], [23, 1154], [23, 1021], [24, 931]]
+                                                                          },
+                                                                          {
+                                                                              label: "Visits",
+                                                                              data: [[1, 1413], [2, 1134], [3, 1133], [4, 1445], [5, 1663], [6, 1233], [7, 1244], [8, 1439], [9, 1635], [10, 2124], [11, 1554], [12, 1521], [13, 1513], [14, 1234], [15, 1643], [16, 1245], [17, 1263], [18, 1833], [19, 1944], [20, 1739], [21, 1545], [22, 2354], [23, 1254], [24, 1531]]
+                                                                          }
+                                                                      ];
+
+                                                                      $.plot($("#chart"), data1, {
+                                                                          grid: { backgroundColor: { colors: ["#fff", "#fff"] } },
+                                                                          colors: ["#2266BB", "#FF9115"]
+                                                                      });
+
+                                                                  });
+                                                              </script>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div></div>
+
+                    <div class="row clearfix"><div class="col_12">
+                                                  <div class="widget clearfix">
+                                                      <h2>Data Table</h2>
+                                                      <div class="widget_inside">
+                                                          <p>DataTable? Regular Table? Everything is ready for you to start using right now! Check out the <a href="tables.html">Tables</a> page!</p> <br />
+                                                          <div class="col_12">
+                                                              <table class='dataTable'>
+                                                                  <thead>
+                                                                      <tr>
+
+                                                                          <th></th>
+                                                                          <th class="align-left">Rendering engine</th>
+                                                                          <th class="align-left">Browser</th>
+                                                                          <th class="align-left">Platform(s)</th>
+                                                                          <th>Engine version</th>
+                                                                          <th>CSS grade</th>
+
+                                                                      </tr>
+                                                                  </thead>
+                                                                  <tbody>
+                                                                      <tr class="gradeX">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Trident</td>
+                                                                          <td>Internet
+                                                                              Explorer 4.0</td>
+
+                                                                          <td>Win 95+</td>
+                                                                          <td class="center">4</td>
+                                                                          <td class="center">X</td>
+                                                                      </tr>
+                                                                      <tr class="gradeC">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Trident</td>
+
+                                                                          <td>Internet Explorer 5.0</td>
+                                                                          <td>Win 95+</td>
+                                                                          <td class="center">5</td>
+                                                                          <td class="center">C</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+
+                                                                          <td>Trident</td>
+                                                                          <td>Internet
+                                                                              Explorer 5.5</td>
+
+                                                                          <td>Win 95+</td>
+                                                                          <td class="center">5.5</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Trident</td>
+                                                                          <td>Internet
+                                                                              Explorer 6</td>
+
+                                                                          <td>Win 98+</td>
+                                                                          <td class="center">6</td>
+
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Trident</td>
+                                                                          <td>Internet Explorer 7</td>
+
+                                                                          <td>Win XP SP2+</td>
+
+                                                                          <td class="center">7</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Trident</td>
+                                                                          <td>AOL browser (AOL desktop)</td>
+
+                                                                          <td>Win XP</td>
+                                                                          <td class="center">6</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+
+                                                                          <td>Firefox 1.0</td>
+
+                                                                          <td>Win 98+ / OSX.2+</td>
+                                                                          <td class="center">1.7</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Firefox 1.5</td>
+
+                                                                          <td>Win 98+ / OSX.2+</td>
+                                                                          <td class="center">1.8</td>
+                                                                          <td class="center">A</td>
+
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Firefox 2.0</td>
+
+                                                                          <td>Win 98+ / OSX.2+</td>
+                                                                          <td class="center">1.8</td>
+
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Firefox 3.0</td>
+
+                                                                          <td>Win 2k+ / OSX.3+</td>
+
+                                                                          <td class="center">1.9</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Camino 1.0</td>
+
+                                                                          <td>OSX.2+</td>
+                                                                          <td class="center">1.8</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+
+                                                                          <td>Camino 1.5</td>
+
+                                                                          <td>OSX.3+</td>
+                                                                          <td class="center">1.8</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Netscape 7.2</td>
+
+                                                                          <td>Win 95+ / Mac OS 8.6-9.2</td>
+                                                                          <td class="center">1.7</td>
+                                                                          <td class="center">A</td>
+
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Netscape Browser 8</td>
+
+                                                                          <td>Win 98SE+</td>
+                                                                          <td class="center">1.7</td>
+
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Netscape Navigator 9</td>
+
+                                                                          <td>Win 98+ / OSX.2+</td>
+
+                                                                          <td class="center">1.8</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Mozilla 1.0</td>
+
+                                                                          <td>Win 95+ / OSX.1+</td>
+                                                                          <td class="center">1</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+
+                                                                          <td>Mozilla 1.1</td>
+
+                                                                          <td>Win 95+ / OSX.1+</td>
+                                                                          <td class="center">1.1</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Mozilla 1.2</td>
+
+                                                                          <td>Win 95+ / OSX.1+</td>
+                                                                          <td class="center">1.2</td>
+                                                                          <td class="center">A</td>
+
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Mozilla 1.3</td>
+
+                                                                          <td>Win 95+ / OSX.1+</td>
+                                                                          <td class="center">1.3</td>
+
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Mozilla 1.4</td>
+
+                                                                          <td>Win 95+ / OSX.1+</td>
+
+                                                                          <td class="center">1.4</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Mozilla 1.5</td>
+
+                                                                          <td>Win 95+ / OSX.1+</td>
+                                                                          <td class="center">1.5</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+
+                                                                          <td>Mozilla 1.6</td>
+
+                                                                          <td>Win 95+ / OSX.1+</td>
+                                                                          <td class="center">1.6</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Mozilla 1.7</td>
+
+                                                                          <td>Win 98+ / OSX.1+</td>
+                                                                          <td class="center">1.7</td>
+                                                                          <td class="center">A</td>
+
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Mozilla 1.8</td>
+
+                                                                          <td>Win 98+ / OSX.1+</td>
+                                                                          <td class="center">1.8</td>
+
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Seamonkey 1.1</td>
+
+                                                                          <td>Win 98+ / OSX.2+</td>
+
+                                                                          <td class="center">1.8</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Gecko</td>
+                                                                          <td>Epiphany 2.20</td>
+
+                                                                          <td>Gnome</td>
+                                                                          <td class="center">1.8</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Webkit</td>
+
+                                                                          <td>Safari 1.2</td>
+
+                                                                          <td>OSX.3</td>
+                                                                          <td class="center">125.5</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Webkit</td>
+                                                                          <td>Safari 1.3</td>
+
+                                                                          <td>OSX.3</td>
+                                                                          <td class="center">312.8</td>
+                                                                          <td class="center">A</td>
+
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Webkit</td>
+                                                                          <td>Safari 2.0</td>
+
+                                                                          <td>OSX.4+</td>
+                                                                          <td class="center">419.3</td>
+
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Webkit</td>
+                                                                          <td>Safari 3.0</td>
+
+                                                                          <td>OSX.4+</td>
+
+                                                                          <td class="center">522.1</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Webkit</td>
+                                                                          <td>OmniWeb 5.5</td>
+
+                                                                          <td>OSX.4+</td>
+                                                                          <td class="center">420</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Webkit</td>
+
+                                                                          <td>iPod Touch / iPhone</td>
+
+                                                                          <td>iPod</td>
+                                                                          <td class="center">420.1</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Webkit</td>
+                                                                          <td>S60</td>
+
+                                                                          <td>S60</td>
+                                                                          <td class="center">413</td>
+                                                                          <td class="center">A</td>
+
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Presto</td>
+                                                                          <td>Opera 7.0</td>
+
+                                                                          <td>Win 95+ / OSX.1+</td>
+                                                                          <td class="center">-</td>
+
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Presto</td>
+                                                                          <td>Opera 7.5</td>
+
+                                                                          <td>Win 95+ / OSX.2+</td>
+
+                                                                          <td class="center">-</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Presto</td>
+                                                                          <td>Opera 8.0</td>
+
+                                                                          <td>Win 95+ / OSX.2+</td>
+                                                                          <td class="center">-</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Presto</td>
+
+                                                                          <td>Opera 8.5</td>
+
+                                                                          <td>Win 95+ / OSX.2+</td>
+                                                                          <td class="center">-</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Presto</td>
+                                                                          <td>Opera 9.0</td>
+
+                                                                          <td>Win 95+ / OSX.3+</td>
+                                                                          <td class="center">-</td>
+                                                                          <td class="center">A</td>
+
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Presto</td>
+                                                                          <td>Opera 9.2</td>
+
+                                                                          <td>Win 88+ / OSX.3+</td>
+                                                                          <td class="center">-</td>
+
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Presto</td>
+                                                                          <td>Opera 9.5</td>
+
+                                                                          <td>Win 88+ / OSX.3+</td>
+
+                                                                          <td class="center">-</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Presto</td>
+                                                                          <td>Opera for Wii</td>
+
+                                                                          <td>Wii</td>
+                                                                          <td class="center">-</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Presto</td>
+
+                                                                          <td>Nokia N800</td>
+
+                                                                          <td>N800</td>
+                                                                          <td class="center">-</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Presto</td>
+                                                                          <td>Nintendo DS browser</td>
+
+                                                                          <td>Nintendo DS</td>
+                                                                          <td class="center">8.5</td>
+                                                                          <td class="center">C/A<sup>1</sup></td>
+
+                                                                      </tr>
+                                                                      <tr class="gradeC">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>KHTML</td>
+
+                                                                          <td>Konqureror 3.1</td>
+                                                                          <td>KDE 3.1</td>
+                                                                          <td class="center">3.1</td>
+
+                                                                          <td class="center">C</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>KHTML</td>
+
+                                                                          <td>Konqureror 3.3</td>
+                                                                          <td>KDE 3.3</td>
+
+                                                                          <td class="center">3.3</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>KHTML</td>
+
+                                                                          <td>Konqureror 3.5</td>
+
+                                                                          <td>KDE 3.5</td>
+                                                                          <td class="center">3.5</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeX">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Tasman</td>
+
+                                                                          <td>Internet Explorer 4.5</td>
+                                                                          <td>Mac OS 8-9</td>
+                                                                          <td class="center">-</td>
+                                                                          <td class="center">X</td>
+                                                                      </tr>
+                                                                      <tr class="gradeC">
+
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Tasman</td>
+
+                                                                          <td>Internet Explorer 5.1</td>
+                                                                          <td>Mac OS 7.6-9</td>
+                                                                          <td class="center">1</td>
+                                                                          <td class="center">C</td>
+
+                                                                      </tr>
+                                                                      <tr class="gradeC">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Tasman</td>
+
+                                                                          <td>Internet Explorer 5.2</td>
+                                                                          <td>Mac OS 8-X</td>
+                                                                          <td class="center">1</td>
+
+                                                                          <td class="center">C</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Misc</td>
+
+                                                                          <td>NetFront 3.1</td>
+                                                                          <td>Embedded devices</td>
+
+                                                                          <td class="center">-</td>
+                                                                          <td class="center">C</td>
+                                                                      </tr>
+                                                                      <tr class="gradeA">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Misc</td>
+
+                                                                          <td>NetFront 3.4</td>
+
+                                                                          <td>Embedded devices</td>
+                                                                          <td class="center">-</td>
+                                                                          <td class="center">A</td>
+                                                                      </tr>
+                                                                      <tr class="gradeX">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Misc</td>
+
+                                                                          <td>Dillo 0.8</td>
+                                                                          <td>Embedded devices</td>
+                                                                          <td class="center">-</td>
+                                                                          <td class="center">X</td>
+                                                                      </tr>
+                                                                      <tr class="gradeX">
+
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Misc</td>
+
+                                                                          <td>Links</td>
+                                                                          <td>Text only</td>
+                                                                          <td class="center">-</td>
+                                                                          <td class="center">X</td>
+
+                                                                      </tr>
+                                                                      <tr class="gradeX">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Misc</td>
+
+                                                                          <td>Lynx</td>
+                                                                          <td>Text only</td>
+                                                                          <td class="center">-</td>
+
+                                                                          <td class="center">X</td>
+                                                                      </tr>
+                                                                      <tr class="gradeC">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Misc</td>
+
+                                                                          <td>IE Mobile</td>
+                                                                          <td>Windows Mobile 6</td>
+
+                                                                          <td class="center">-</td>
+                                                                          <td class="center">C</td>
+                                                                      </tr>
+                                                                      <tr class="gradeC">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Misc</td>
+                                                                          <td>PSP browser</td>
+
+                                                                          <td>PSP</td>
+                                                                          <td class="center">-</td>
+                                                                          <td class="center">C</td>
+                                                                      </tr>
+                                                                      <tr class="gradeU">
+                                                                          <td><input type="checkbox" /></td>
+                                                                          <td>Other browsers</td>
+
+                                                                          <td>All others</td>
+                                                                          <td>-</td>
+                                                                          <td class="center">-</td>
+                                                                          <td class="center">U</td>
+                                                                      </tr>
+                                                                  </tbody>
+                                                              </table>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div></div>
+    
+                    <div class="row clearfix"><div class="col_12">
+                                                  <div class="widget clearfix">
+                                                      <h2>Form Elements</h2>
+                                                      <div class="widget_inside">
+                                                          <div class="clearfix col_12">
+                                                              <div class="col_4">
+                                                                  <h3>Default styles</h3>
+                                                                  <p>Every admin theme needs a powerful yet subtle form design. This theme is no different. Check out the <a href="forms.html">Forms</a> page for client-side validation!</p>
+                                                              </div>
+                                                              <div class="col_8 last">
+                                                                  <div class="form">
+                                                                      <div class="clearfix">
+                                                                          <label>Large Input</label>
+                                                                          <div class="input"><input class="large" type="text" /></div>
+                                                                      </div>
+                                                                      <div class="clearfix">
+                                                                          <label>Field with Tooltip</label>
+                                                                          <div class="input">
+                                                                              <input type="text" title="hello" rel="tooltips" class="xlarge" />
+                                                                              <span class="info">Specify a title attribute for tooltips</span>
+                                                                          </div>
+                                                                      </div>
+                                                                      <div class="clearfix">
+                                                                          <label>Placeholder Text</label>
+                                                                          <div class="input">
+                                                                              <input type="text" placeholder="This is a sample placeholder text" class="xxlarge" />
+                                                                              <span class="info">use the placeholder attribute <code>placeholder="your placeholder text"</code></span>
+                                                                          </div>
+                                                                      </div>
+                                                                      <div class="clearfix">
+                                                                          <label>Select</label>
+                                                                          <div class="input">
+                                                                              <select>
+                                                                                  <option>Toyota</option>
+                                                                                  <option>BMW</option>
+                                                                                  <option>Ferrari</option>
+                                                                                  <option>Lamborghini</option>
+                                                                                  <option>Volvo</option>
+                                                                                  <option>Mitsubishi</option>
+                                                                                  <option>Tata</option>
+                                                                              </select>
+                                                                          </div>
+                                                                      </div>
+                                                                      <div class="clearfix">
+                                                                          <label>Multiple Select</label>
+                                                                          <div class="input">
+                                                                              <select multiple="">
+                                                                                  <option>Toyota</option>
+                                                                                  <option>BMW</option>
+                                                                                  <option>Ferrari</option>
+                                                                                  <option>Lamborghini</option>
+                                                                                  <option>Volvo</option>
+                                                                                  <option>Mitsubishi</option>
+                                                                                  <option>Tata</option>
+                                                                              </select>
+                                                                          </div>
+                                                                      </div>
+                                                                      <div class="clearfix">
+                                                                          <label>Disabled Input</label>
+                                                                          <div class="input">
+                                                                              <input type="text" disabled="disabled" class="xlarge" value="This field is disabled, carry on..."></input>
+                                                                          </div>
+                                                                      </div>
+                                                                      <div class="clearfix red-highlight">
+                                                                          <label>Red Highlight</label>
+                                                                          <div class="input">
+                                                                              <input type="text" class="xlarge"></input>
+                                                                              <span class="help">Small snippet of help text</span>
+                                                                          </div>                        
+                                                                      </div>
+                                                                      <div class="clearfix green-highlight">
+                                                                          <label>Green Highlight</label>
+                                                                          <div class="input">
+                                                                              <input type="text" class="xlarge"></input>
+                                                                              <span class="help">Small snippet of help text</span>
+                                                                          </div>                        
+                                                                      </div>
+                                                                      <div class="clearfix">
+                                                                          <label>Textarea</label>
+                                                                          <div class="input"><textarea class="xxlarge"></textarea></div>
+                                                                      </div>
+                                                                      <div class="clearfix">
+                                                                          <label>Options</label>
+                                                                          <div class="input">
+                                                                              <input type="radio">Radio 1</input>
+                                                                              <input type="radio">Radio 2</input>
+                                                                              <input type="checkbox">Checkbox 1</input>
+                                                                              <input type="checkbox">Checkbox 2</input>
+                                                                          </div>
+                                                                      </div>
+                                                                      <div class="clearfix grey-highlight">
+                                                                          <div class="input no-label">
+                                                                              <input type="submit" class="button blue" value="Submit"></input>
+                                                                              <input type="reset" class="button grey" value="Reset"></input>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="col_12">
+                                                              <h3 class="margin_bottom_15">Notification Messages</h3>
+                                                              <span class="notification undone">
+                                                                  This is a red notification with class="notification undone"
+                                                              </span>
+                                                              <span class="notification done">
+                                                                  This is a green notification with class="notification done"
+                                                              </span>
+                                                              <span class="notification information">
+                                                                  This is a blue notification with class="notification information"
+                                                              </span>
+                                                              <span class="notification setting">
+                                                                  This is a grey notification with class="notification settings"
+                                                              </span>
+                                                              <span class="notification warning">
+                                                                  This is a yellow notification with class="notification warning"
+                                                              </span>
+                                                          </div>
+                                                      </div>
+                                                  </div>   
+                                              </div></div>
+            
+                </div><!--container -->
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col_12">
+                        <span class="left">&copy; 2011 Themio.</span>
+                        <span class="right">Powered by Muse</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
